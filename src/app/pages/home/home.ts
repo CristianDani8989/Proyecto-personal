@@ -48,28 +48,28 @@ export class Home {
     {
       nombre: 'SISTEMA-DE-GESTION-DE-NOTAS-API',
       lenguaje: 'HTML / Backend',
-      descripcion: 'Aquí puedes describir cómo funciona tu API de notas. Por ejemplo: "Desarrollo de una API REST para la gestión académica, permitiendo el registro y consulta de calificaciones en tiempo real".',
+      descripcion: 'Aqui desarrolle una Api para la gestion de comentarios de usuarios, conectada a una base de datos llamada SQlite en el cual se encarga de guardar los comentarios de los usuarios con la funcionalidad de editarlos y borrarlos.',
       link: 'https://github.com/CristianDani8989/SISTEMA-DE-GESTION-DE-NOTAS-API',
       color: 'blue'
     },
     {
       nombre: 'Sistema de Gestión de Productos y Usuarios',
       lenguaje: 'TypeScript / JavaScript',
-      descripcion: 'Escribe aquí sobre la lógica de usuarios. Por ejemplo: "Plataforma avanzada con autenticación de usuarios y CRUD completo para el control de inventarios de productos".',
+      descripcion: ' este proyecto implementa un sistema de gestión de productos y usuarios utilizando TypeScript y JavaScript. Permite a los usuarios administrar su inventario de productos, realizar seguimiento de las ventas y gestionar la información de los clientes.',
       link: 'https://github.com/CristianDani8989/Sistema-de-Gesti-n-de-Productos-y-Usuarios---Versi-n-Avanzada',
       color: 'cyan'
     },
     {
       nombre: 'proyecto-cocacola',
       lenguaje: 'HTML / CSS',
-      descripcion: 'Describe este proyecto personal. Por ejemplo: "Proyecto de práctica de maquetación web enfocado en diseño responsivo y replicación de interfaces corporativas".',
+      descripcion: ' este proyecto es una pagina de la empresa cocacola en la cual se muestra informacion de la empresa, sus productos y su historia, ademas de una galeria de imagenes y un formulario de contacto.',
       link: 'https://github.com/CristianDani8989/proyecto-cocacola',
       color: 'blue'
     },
     {
       nombre: 'SEMINARIO2026_MÚSICA1',
       lenguaje: 'TypeScript / Angular-ionic',
-      descripcion: 'Cuéntales de qué trata este seminario. Por ejemplo: "Aplicación desarrollada durante el seminario de tecnología 2026 para la gestión y reproducción de listas musicales".',
+      descripcion: 'este proyecto universitario trata de un stilo spotify en el cual se muestra una lista de canciones, con su respectiva portada, titulo y artista, ademas de un reproductor de musica y una barra de busqueda para encontrar canciones.',
       link: 'https://github.com/CristianDani8989/SEMINARIO2026_MÚSICA1',
       color: 'cyan'
     }
