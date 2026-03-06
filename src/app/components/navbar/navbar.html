@@ -1,0 +1,16 @@
+<nav [class.scrolled]="isScrolled" class="navbar" id="main-navbar">
+    <div class="navbar-inner">
+        <a href="#hero" (click)="scrollTo($event, '#hero')" class="navbar-brand">
+            <span class="brand-icon">CG</span>
+            <span class="brand-text">Cristian Guzman</span>
+        </a>
+
+        <ul class="navbar-links">
+            <li *ngFor="let link of navLinks">
+                <a [href]="link.href" (click)="scrollTo($event, link.href)" class="nav-link">
+                    {{ link.label }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

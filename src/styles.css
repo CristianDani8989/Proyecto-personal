@@ -4,3 +4,33 @@
   --color-brand-blue: #2563eb;
   --color-brand-cyan: #06b6d4;
 }
+
+/* === Global Dark Space Theme === */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: transparent !important;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}

@@ -1,15 +1,25 @@
-import { CommonModule } from '@angular/common'; 
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule], 
+  imports: [CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home {
+export class Home implements AfterViewInit, OnDestroy {
+  private observer!: IntersectionObserver;
+
   skills = ['HTML5', 'CSS3', 'JavaScript', 'Angular', 'React', 'Ionic', 'Python'];
+
+  softSkills = [
+    'Resolución de problemas complejos',
+    'Comunicación Asertiva',
+    'Trabajo en Equipo',
+    'Autogestión y Aprendizaje Autónomo',
+    'Análisis Crítico'
+  ];
 
   certificados = [
     {
@@ -48,31 +58,71 @@ export class Home {
     {
       nombre: 'SISTEMA-DE-GESTION-DE-NOTAS-API',
       lenguaje: 'HTML / Backend',
-      descripcion: 'Aqui desarrolle una Api para la gestion de comentarios de usuarios, conectada a una base de datos llamada SQlite en el cual se encarga de guardar los comentarios de los usuarios con la funcionalidad de editarlos y borrarlos.',
+      descripcion: 'Api para la gestión de comentarios de usuarios, conectada a SQLite con funcionalidad de edición y eliminación.',
       link: 'https://github.com/CristianDani8989/SISTEMA-DE-GESTION-DE-NOTAS-API',
       color: 'blue'
     },
     {
       nombre: 'Sistema de Gestión de Productos y Usuarios',
       lenguaje: 'TypeScript / JavaScript',
-      descripcion: ' este proyecto implementa un sistema de gestión de productos y usuarios utilizando TypeScript y JavaScript. Permite a los usuarios administrar su inventario de productos, realizar seguimiento de las ventas y gestionar la información de los clientes.',
+      descripcion: 'Sistema de gestión de productos y usuarios con seguimiento de ventas y administración de inventario y clientes.',
       link: 'https://github.com/CristianDani8989/Sistema-de-Gesti-n-de-Productos-y-Usuarios---Versi-n-Avanzada',
       color: 'cyan'
     },
     {
       nombre: 'proyecto-cocacola',
       lenguaje: 'HTML / CSS',
-      descripcion: ' este proyecto es una pagina de la empresa cocacola en la cual se muestra informacion de la empresa, sus productos y su historia, ademas de una galeria de imagenes y un formulario de contacto.',
+      descripcion: 'Página de la empresa Coca-Cola con información, productos, historia, galería de imágenes y formulario de contacto.',
       link: 'https://github.com/CristianDani8989/proyecto-cocacola',
       color: 'blue'
     },
     {
       nombre: 'SEMINARIO2026_MÚSICA1',
-      lenguaje: 'TypeScript / Angular-ionic',
-      descripcion: 'este proyecto universitario trata de un stilo spotify en el cual se muestra una lista de canciones, con su respectiva portada, titulo y artista, ademas de un reproductor de musica y una barra de busqueda para encontrar canciones.',
+      lenguaje: 'TypeScript / Angular-Ionic',
+      descripcion: 'Proyecto universitario estilo Spotify con lista de canciones, portadas, reproductor de música y barra de búsqueda.',
       link: 'https://github.com/CristianDani8989/SEMINARIO2026_MÚSICA1',
       color: 'cyan'
     }
   ];
 
+  private skillEmojis: Record<string, string> = {
+    'HTML5': '🌐',
+    'CSS3': '🎨',
+    'JavaScript': '⚡',
+    'Angular': '🅰️',
+    'React': '⚛️',
+    'Ionic': '📱',
+    'Python': '🐍'
+  };
+
+  getSkillEmoji(skill: string): string {
+    return this.skillEmojis[skill] || '💻';
+  }
+
+  ngAfterViewInit(): void {
+    this.setupScrollReveal();
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  private setupScrollReveal(): void {
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          this.observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach(el => this.observer.observe(el));
+  }
 }

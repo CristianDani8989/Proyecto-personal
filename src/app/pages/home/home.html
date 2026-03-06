@@ -1,145 +1,184 @@
-<section class="max-w-5xl mx-auto px-6 py-12 space-y-20">
+<section class="max-w-5xl mx-auto px-6 pt-28 pb-12 space-y-20">
 
-  <div class="flex flex-col md:flex-row items-center gap-10">
-    <div class="relative">
-      <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full blur opacity-25"></div>
-      <img src="/img/Presentacion.jpeg" alt="Cristian Guzman" 
-           class="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-xl">
+  <!-- HERO -->
+  <div id="hero" class="reveal flex flex-col md:flex-row items-center gap-10">
+    <div class="relative group">
+      <div
+        class="absolute -inset-2 bg-gradient-to-r from-blue-600 via-cyan-400 to-purple-500 rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-500 animate-pulse-slow">
+      </div>
+      <img src="/img/Presentacion.jpeg" alt="Cristian Guzman"
+        class="relative w-52 h-52 rounded-full object-cover border-4 border-white/30 shadow-2xl ring-2 ring-blue-500/20">
     </div>
 
     <div class="flex-1 text-center md:text-left">
-      <h1 class="text-4xl font-extrabold text-slate-900 mb-4">
-        Cristian Guzman <span class="text-blue-600 text-2xl block md:inline">| junior </span>
+      <p class="text-sm font-semibold text-blue-400 uppercase tracking-widest mb-2 reveal-delay-1"> Bienvenido a mi
+        portafolio</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+        Cristian Guzman
+        <span
+          class="block text-2xl md:text-3xl bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mt-1">Desarrollador
+          Web Junior</span>
       </h1>
-      <p class="text-lg text-slate-600 leading-relaxed">
-        "Bienvenidos a mi proyecto personal. Aquí les comparto quién soy y mis conocimientos como desarrollador web. Mi nombre es Cristian Guzman, tengo 20 años y actualmente estudio Ingeniería de Sistemas. Soy tecnólogo graduado en Desarrollo de Software y me apasiona el desarrollo web y Python, lenguajes en los que demuestro mis habilidades usando HTML5, CSS3, JavaScript y frameworks como React, Angular e Ionic."
+      <p class="text-lg text-slate-400 leading-relaxed max-w-xl">
+        Tecnólogo en Desarrollo de Software, estudiante de Ingeniería de Sistemas. Me apasiona el desarrollo web y
+        Python — demuestro mis habilidades usando HTML5, CSS3, JavaScript y frameworks como React, Angular e Ionic.
       </p>
     </div>
   </div>
 
-  <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+  <div class="reveal reveal-delay-2 flex flex-wrap gap-4 justify-center md:justify-start -mt-8">
     <a href="https://www.linkedin.com/in/cristi%C3%A1n-guzm%C3%A1n-b64387347" target="_blank"
-       class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
-      Contratar en LinkedIn
+      class="group px-5 py-2.5 bg-blue-600 text-white rounded-xl text-sm font-semibold hover:bg-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 flex items-center gap-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+      </svg>
+      LinkedIn
     </a>
     <a href="https://github.com/CristianDani8989" target="_blank"
-       class="px-4 py-2 border border-slate-300 text-slate-700 rounded-lg text-sm font-semibold hover:bg-slate-50 transition-colors">
-      Ver Proyectos en GitHub
+      class="group px-5 py-2.5 border border-slate-600 text-slate-300 rounded-xl text-sm font-semibold hover:bg-white/5 hover:border-slate-400 transition-all duration-300 flex items-center gap-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+      </svg>
+      GitHub
     </a>
     <a href="/docs/Guzman-pdf.pdf" download="HV-Cristian-Guzman.pdf"
-       class="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all shadow-lg shadow-slate-200 flex items-center gap-2">
+      class="group px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-xl font-bold hover:from-blue-500 hover:to-cyan-400 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 flex items-center gap-2">
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
       </svg>
       Descargar CV
     </a>
   </div>
 
-  <div>
-    <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-2">
-      <span class="w-8 h-1 bg-blue-600 rounded"></span> Stack Tecnológico
+  <!-- STACK TECNOLÓGICO -->
+  <div id="stack" class="reveal">
+    <h2 class="section-title">
+      <span class="section-bar"></span> Stack Tecnológico
     </h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div *ngFor="let skill of ['HTML5', 'CSS3', 'JavaScript', 'Angular', 'React', 'Ionic', 'Python']" 
-           class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:border-blue-500 transition-colors flex items-center justify-center font-medium text-slate-700">
-        {{ skill }}
+      <div *ngFor="let skill of skills; let i = index" class="skill-card reveal"
+        [style.animation-delay]="(i * 0.08) + 's'">
+        <span class="skill-icon">{{ getSkillEmoji(skill) }}</span>
+        <span class="font-medium">{{ skill }}</span>
       </div>
     </div>
   </div>
 
-  <div class="mt-12">
-    <h2 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
-      <span class="w-6 h-1 bg-slate-400 rounded"></span> Habilidades blandas
+  <!-- HABILIDADES BLANDAS -->
+  <div class="reveal">
+    <h2 class="section-subtitle">
+      <span class="section-bar-sm"></span> Habilidades blandas
     </h2>
     <div class="flex flex-wrap gap-3">
-      <span *ngFor="let soft of ['Resolución de problemas complejos', 'Comunicación Asertiva', 'Trabajo en Equipo', 'Autogestión y Aprendizaje Autónomo', 'Análisis Crítico']"
-            class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-200 hover:bg-white hover:border-blue-400 transition-colors cursor-default">
+      <span *ngFor="let soft of softSkills" class="soft-skill-tag">
         {{ soft }}
       </span>
     </div>
   </div>
 
-  <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100">
-    <h2 class="text-2xl font-bold text-slate-800 mb-6">Experiencia Profesional</h2>
+  <!-- EXPERIENCIA PROFESIONAL -->
+  <div id="experiencia" class="reveal glass-card p-8">
+    <h2 class="text-2xl font-bold text-white mb-6">Experiencia Profesional</h2>
     <div class="space-y-8">
-      <div class="relative pl-8 border-l-2 border-blue-200">
-        <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
-        <h3 class="text-xl font-bold text-slate-800">Soporte Técnico & Automatización</h3>
-        <p class="text-sm text-blue-600 font-semibold mb-2">Proyecto Air-e</p>
-        <p class="text-slate-600 leading-relaxed">
-         "Cuento con experiencia laboral prestando servicios para Air-e, donde mi función principal era la gestión de PQR, notificando a los usuarios y administrando la base de datos central en Excel. En este rol, apoyé un proyecto de automatización con Python para optimizar la generación de documentos, transformando cartas de Word a PDF de forma automática y organizando eficientemente la información de las solicitudes."
+      <div class="relative pl-8 border-l-2 border-blue-500/40">
+        <div
+          class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1 shadow-lg shadow-blue-500/50 ring-4 ring-blue-500/20">
+        </div>
+        <h3 class="text-xl font-bold text-white">Soporte Técnico &amp; Automatización</h3>
+        <p class="text-sm text-blue-400 font-semibold mb-2">Proyecto Air-e</p>
+        <p class="text-slate-400 leading-relaxed">
+          Experiencia prestando servicios para Air-e, gestionando PQR, notificando a usuarios y administrando la base de
+          datos central en Excel. Apoyo en proyecto de automatización con Python para optimizar la generación de
+          documentos — transformando cartas de Word a PDF de forma automática y organizando eficientemente la
+          información de las solicitudes.
         </p>
       </div>
     </div>
   </div>
 
-  <section class="mt-20">
-    <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-2">
-      <span class="w-8 h-1 bg-blue-600 rounded"></span> Certificaciones y Formación
+  <!-- CERTIFICACIONES -->
+  <section id="certificaciones" class="mt-20 reveal">
+    <h2 class="section-title">
+      <span class="section-bar"></span> Certificaciones y Formación
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div *ngFor="let cert of certificados" 
-           class="group bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md hover:border-blue-400 transition-all flex flex-col justify-between">
+      <div *ngFor="let cert of certificados; let i = index" class="cert-card reveal"
+        [style.animation-delay]="(i * 0.1) + 's'">
         <div>
           <div class="flex items-center justify-between mb-4">
-            <span [class]="cert.color === 'blue' ? 'text-blue-600 bg-blue-50' : 'text-cyan-600 bg-cyan-50'" 
-                  class="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-md">
+            <span [class]="cert.color === 'blue' ? 'badge-blue' : 'badge-cyan'">
               Certificado
             </span>
-            <svg class="w-5 h-5 text-slate-300 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            <svg class="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold text-slate-900 leading-tight group-hover:text-blue-700 transition-colors">
+          <h3 class="text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
             {{ cert.titulo }}
           </h3>
-          <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
             {{ cert.descripcion }}
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-slate-50">
-          <span class="text-xs font-semibold text-slate-400">Verificado</span>
+        <div class="mt-6 pt-4 border-t border-white/5">
+          <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">
+            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Verificado
+          </span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="mt-20">
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="mt-20 reveal">
     <div class="flex items-center justify-between mb-8">
-      <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
-        <span class="w-8 h-1 bg-blue-600 rounded"></span> Proyectos en GitHub
+      <h2 class="section-title mb-0">
+        <span class="section-bar"></span> Proyectos en GitHub
       </h2>
-      <a href="https://github.com/CristianDani8989" target="_blank" class="text-sm font-semibold text-blue-600 hover:underline">
-        Ver todo mi perfil →
+      <a href="https://github.com/CristianDani8989" target="_blank"
+        class="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1">
+        Ver perfil
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
       </a>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div *ngFor="let item of proyectos" 
-           class="group bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-blue-400 transition-all duration-300 flex flex-col justify-between">
+      <div *ngFor="let item of proyectos; let i = index" class="project-card group reveal"
+        [style.animation-delay]="(i * 0.12) + 's'">
         <div>
           <div class="flex justify-between items-start mb-4">
-            <span [class]="item.color === 'blue' ? 'bg-blue-50 text-blue-600' : 'bg-cyan-50 text-cyan-600'" 
-                  class="px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest">
+            <span [class]="item.color === 'blue' ? 'badge-blue' : 'badge-cyan'">
               {{ item.lenguaje }}
             </span>
-            <svg class="w-6 h-6 text-slate-400 group-hover:text-slate-900 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <svg class="w-6 h-6 text-slate-500 group-hover:text-white transition-colors duration-300"
+              fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+          <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300 mb-3">
             {{ item.nombre }}
           </h3>
-          <p class="text-slate-600 text-sm leading-relaxed italic">
+          <p class="text-slate-400 text-sm leading-relaxed">
             {{ item.descripcion }}
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
-          <a [href]="item.link" target="_blank" 
-             class="text-xs font-bold text-slate-900 flex items-center gap-1 hover:gap-2 transition-all">
-            REVISAR CÓDIGO 
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+          <a [href]="item.link" target="_blank"
+            class="text-xs font-bold text-blue-400 flex items-center gap-1.5 hover:gap-3 transition-all duration-300 uppercase tracking-wider">
+            Ver código
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </a>
         </div>
@@ -147,43 +186,47 @@
     </div>
   </section>
 
-  <section class="mt-20 mb-10">
-    <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-2">
-      <span class="w-8 h-1 bg-green-500 rounded"></span> ¡Hablemos!
+  <!-- CONTACTO -->
+  <section id="contacto" class="mt-20 mb-10 reveal">
+    <h2 class="section-title">
+      <span class="section-bar" style="background: linear-gradient(90deg, #22c55e, #06b6d4);"></span> ¡Hablemos!
     </h2>
     <div class="flex flex-col md:flex-row gap-6 items-stretch">
-      <div class="flex-1 bg-green-50 border border-green-100 p-8 rounded-3xl flex flex-col justify-between text-center transition-transform hover:scale-[1.02]">
+      <div class="flex-1 contact-card contact-card-green">
         <div class="flex flex-col items-center">
-          <div class="bg-green-500 p-4 rounded-full mb-4 shadow-lg shadow-green-200">
+          <div class="contact-icon-wrap bg-green-500 shadow-green-500/30">
             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.52s.44.264 1.467.264c1.614 0 3.123-.5 4.354-1.407l.312-.23 3.748.71l-.614-3.691.255-.405c.808-1.282 1.238-2.773 1.238-4.303 0-4.524-3.682-8.207-8.209-8.207-4.526 0-8.21 3.683-8.21 8.207 0 1.666.495 3.235 1.428 4.562l.255.364-.81 2.964 3.125-.71z"/>
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.52s.44.264 1.467.264c1.614 0 3.123-.5 4.354-1.407l.312-.23 3.748.71l-.614-3.691.255-.405c.808-1.282 1.238-2.773 1.238-4.303 0-4.524-3.682-8.207-8.209-8.207-4.526 0-8.21 3.683-8.21 8.207 0 1.666.495 3.235 1.428 4.562l.255.364-.81 2.964 3.125-.71z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900">WhatsApp</h3>
-          <p class="text-slate-600 text-sm mt-2 mb-6 min-h-[48px] flex items-center justify-center">
-            ¿Tienes una idea en mente? Escríbeme directamente para una respuesta inmediata.
+          <h3 class="text-xl font-bold text-white">WhatsApp</h3>
+          <p class="text-slate-400 text-sm mt-2 mb-6 min-h-[48px] flex items-center justify-center text-center">
+            ¿Tienes una idea en mente? Escríbeme para una respuesta inmediata.
           </p>
         </div>
         <a href="https://wa.me/573207052545?text=Hola%20Cristian,%20vi%20tu%20portafolio" target="_blank"
-           class="w-full py-3 bg-green-500 text-white rounded-xl font-bold hover:bg-green-600 transition-all block text-center">
+          class="w-full py-3 bg-green-500 text-white rounded-xl font-bold hover:bg-green-400 transition-all block text-center hover:shadow-lg hover:shadow-green-500/25">
           Enviar Mensaje
         </a>
       </div>
 
-      <div class="flex-1 bg-blue-50 border border-blue-100 p-8 rounded-3xl flex flex-col justify-between text-center transition-transform hover:scale-[1.02]">
+      <div class="flex-1 contact-card contact-card-blue">
         <div class="flex flex-col items-center">
-          <div class="bg-blue-600 p-4 rounded-full mb-4 shadow-lg shadow-blue-200">
+          <div class="contact-icon-wrap bg-blue-600 shadow-blue-500/30">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900">Correo Electrónico</h3>
-          <p class="text-slate-600 text-sm mt-2 mb-6 min-h-[48px] flex items-center justify-center">
+          <h3 class="text-xl font-bold text-white">Correo Electrónico</h3>
+          <p class="text-slate-400 text-sm mt-2 mb-6 min-h-[48px] flex items-center justify-center text-center">
             Para propuestas formales o detalles de proyectos de ingeniería.
           </p>
         </div>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guzmandani503@gmail.com&su=Contacto%20desde%20Portafolio&body=Hola%20Cristian," target="_blank"
-           class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all block text-center">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guzmandani503@gmail.com&su=Contacto%20desde%20Portafolio&body=Hola%20Cristian,"
+          target="_blank"
+          class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition-all block text-center hover:shadow-lg hover:shadow-blue-500/25">
           Enviar Correo
         </a>
       </div>
